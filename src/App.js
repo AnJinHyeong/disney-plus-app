@@ -1,11 +1,17 @@
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Nav from './components/Nav';
+import Banner from './components/Banner';
 
 function App() {
+  
   return (
-    <div className="App">
-      <Nav />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Nav />
+        <Banner />
+      </div>
+    </BrowserRouter>
   );
 }
 
